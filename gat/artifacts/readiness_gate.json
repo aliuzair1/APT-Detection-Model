@@ -1,0 +1,340 @@
+{
+  "report": {
+    "operating_threshold": 0.8230787515640259,
+    "prov": {
+      "splits": {
+        "train": {
+          "threshold": 0.8230787515640259,
+          "precision": 0.8518518518518519,
+          "recall": 0.6216216216216216,
+          "specificity": 0.999755859375,
+          "fpr": 0.000244140625,
+          "f1": 0.7187499999999999,
+          "f2": 0.657142857142857,
+          "mcc": 0.7271801149364187,
+          "tp": 23.0,
+          "fp": 4.0,
+          "tn": 16380.0,
+          "fn": 14.0,
+          "pr_auc": 0.7049871656855147,
+          "roc_auc": 0.9992543813344594,
+          "prevalence": 0.0022532123500395834,
+          "n_windows": 16421,
+          "n_positive": 37
+        },
+        "val": {
+          "threshold": 0.8230787515640259,
+          "precision": 0.7692307692307693,
+          "recall": 0.8333333333333334,
+          "specificity": 0.9993116108306562,
+          "fpr": 0.0006883891693437356,
+          "f1": 0.8,
+          "f2": 0.819672131147541,
+          "mcc": 0.8000711847608348,
+          "tp": 10.0,
+          "fp": 3.0,
+          "tn": 4355.0,
+          "fn": 2.0,
+          "pr_auc": 0.6574061588124529,
+          "roc_auc": 0.9821210035184336,
+          "prevalence": 0.002745995423340961,
+          "n_windows": 4370,
+          "n_positive": 12
+        },
+        "test": {
+          "threshold": 0.8230787515640259,
+          "precision": 1.0,
+          "recall": 0.47058823529411764,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "f1": 0.6399999999999999,
+          "f2": 0.5263157894736842,
+          "mcc": 0.6855133347795124,
+          "tp": 8.0,
+          "fp": 0.0,
+          "tn": 6411.0,
+          "fn": 9.0,
+          "pr_auc": 0.4909118468761034,
+          "roc_auc": 0.9205318065457349,
+          "prevalence": 0.002644679527069073,
+          "n_windows": 6428,
+          "n_positive": 17
+        }
+      }
+    },
+    "union": {
+      "splits": {
+        "train": {
+          "threshold": 0.8230787515640259,
+          "precision": 0.8518518518518519,
+          "recall": 0.22772277227722773,
+          "specificity": 0.999755859375,
+          "fpr": 0.000244140625,
+          "f1": 0.35937500000000006,
+          "f2": 0.2668213457076566,
+          "mcc": 0.43897607662529076,
+          "tp": 23.0,
+          "fp": 4.0,
+          "tn": 16380.0,
+          "fn": 78.0,
+          "pr_auc": 0.2631248878948454,
+          "roc_auc": 0.5750128113397277,
+          "prevalence": 0.006126781922960267,
+          "n_windows": 16485,
+          "n_positive": 101
+        },
+        "val": {
+          "threshold": 0.8230787515640259,
+          "precision": 0.7692307692307693,
+          "recall": 0.2,
+          "specificity": 0.9993116108306562,
+          "fpr": 0.0006883891693437356,
+          "f1": 0.31746031746031744,
+          "f2": 0.2347417840375587,
+          "mcc": 0.3892333986625271,
+          "tp": 10.0,
+          "fp": 3.0,
+          "tn": 4355.0,
+          "fn": 40.0,
+          "pr_auc": 0.1907355832255377,
+          "roc_auc": 0.5885979807251033,
+          "prevalence": 0.011343012704174229,
+          "n_windows": 4408,
+          "n_positive": 50
+        },
+        "test": {
+          "threshold": 0.8230787515640259,
+          "precision": 1.0,
+          "recall": 0.14035087719298245,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "f1": 0.24615384615384614,
+          "f2": 0.16949152542372878,
+          "mcc": 0.37321079330044293,
+          "tp": 8.0,
+          "fp": 0.0,
+          "tn": 6411.0,
+          "fn": 49.0,
+          "pr_auc": 0.15718142125825418,
+          "roc_auc": 0.5981824003152476,
+          "prevalence": 0.008812615955473098,
+          "n_windows": 6468,
+          "n_positive": 57
+        }
+      }
+    },
+    "prov_test_pr_auc_ci": {
+      "point": 0.4909118468761034,
+      "lo": 0.20751017805429645,
+      "hi": 0.8061937379616506
+    },
+    "burst_test": {
+      "n_bursts": 14,
+      "n_detected": 8,
+      "detection_rate": 0.5714285714285714,
+      "per_burst": [
+        {
+          "burst_id": 3,
+          "n_windows": 5,
+          "detected": false,
+          "time_to_first_detection_s": NaN,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 7,
+          "n_windows": 4,
+          "detected": false,
+          "time_to_first_detection_s": NaN,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 11,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 15,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 19,
+          "n_windows": 3,
+          "detected": false,
+          "time_to_first_detection_s": NaN,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 24,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 28,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 29,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 31,
+          "n_windows": 4,
+          "detected": false,
+          "time_to_first_detection_s": NaN,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 35,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 38,
+          "n_windows": 6,
+          "detected": false,
+          "time_to_first_detection_s": NaN,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 43,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 44,
+          "n_windows": 4,
+          "detected": true,
+          "time_to_first_detection_s": 0.0,
+          "dominant_tactic": "benign"
+        },
+        {
+          "burst_id": 47,
+          "n_windows": 3,
+          "detected": false,
+          "time_to_first_detection_s": NaN,
+          "dominant_tactic": "lateralMovement"
+        }
+      ],
+      "by_tactic": {
+        "benign": {
+          "n_bursts": 13,
+          "n_detected": 8,
+          "detection_rate": 0.6153846153846154
+        },
+        "lateralMovement": {
+          "n_bursts": 1,
+          "n_detected": 0,
+          "detection_rate": 0.0
+        }
+      }
+    },
+    "per_tactic_recall_test": {
+      "benign": {
+        "n_windows": 41,
+        "detected": 1,
+        "recall": 0.024390243902439025
+      },
+      "collection": {
+        "n_windows": 6,
+        "detected": 4,
+        "recall": 0.6666666666666666
+      },
+      "commandAndControl": {
+        "n_windows": 1,
+        "detected": 1,
+        "recall": 1.0
+      },
+      "discovery": {
+        "n_windows": 2,
+        "detected": 1,
+        "recall": 0.5
+      },
+      "exfiltration": {
+        "n_windows": 1,
+        "detected": 1,
+        "recall": 1.0
+      },
+      "lateralMovement": {
+        "n_windows": 3,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "persistence": {
+        "n_windows": 3,
+        "detected": 0,
+        "recall": 0.0
+      }
+    },
+    "persistence_test": {
+      "n_windows": 3,
+      "n_detected": 0,
+      "detected": false
+    },
+    "headroom": {
+      "union_test_recall": 0.14035087719298245,
+      "prov_test_recall": 0.47058823529411764,
+      "net_only_test_positives": 40,
+      "prov_test_positives": 17
+    },
+    "node_head": {
+      "n_nodes": 27578,
+      "n_positive": 65,
+      "roc_auc": 0.8508095473748074,
+      "pr_auc": 0.6330821912077012
+    },
+    "phase1_fpr": {
+      "n_benign_windows": 3530,
+      "false_alarms": 17,
+      "fpr": 0.004815864022662889
+    }
+  },
+  "gate": {
+    "verdict": "NO-GO",
+    "n_pass": 3,
+    "n_total": 4,
+    "checks": [
+      {
+        "name": "prov test PR-AUC",
+        "value": 0.4909118468761034,
+        "target": ">= 0.5",
+        "pass": false
+      },
+      {
+        "name": "prov test ROC-AUC",
+        "value": 0.9205318065457349,
+        "target": ">= 0.85",
+        "pass": true
+      },
+      {
+        "name": "node head ROC-AUC",
+        "value": 0.8508095473748074,
+        "target": ">= 0.8",
+        "pass": true
+      },
+      {
+        "name": "Phase-1 benign FPR",
+        "value": 0.004815864022662889,
+        "target": "<= 0.02",
+        "pass": true
+      }
+    ]
+  },
+  "generated_utc": "2026-07-24T10:45:26Z"
+}

@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "name": "test union PR-AUC",
+      "value": 0.5171896541650967,
+      "pass": false,
+      "target": ">= 0.55"
+    },
+    {
+      "name": "test union ROC-AUC",
+      "value": 0.9174937812476911,
+      "pass": true,
+      "target": ">= 0.85"
+    },
+    {
+      "name": "persistence detected",
+      "value": 1.0,
+      "pass": true,
+      "target": "== True"
+    },
+    {
+      "name": "Phase-1 benign FPR",
+      "value": 0.03654390934844193,
+      "pass": false,
+      "target": "<= 0.02"
+    }
+  ],
+  "verdict": "NO-GO",
+  "test_metrics": {
+    "threshold": 0.0587523952126503,
+    "precision": 0.13068181818181818,
+    "recall": 0.8070175438596491,
+    "specificity": 0.9522695367337389,
+    "fpr": 0.04773046326626111,
+    "f1": 0.22493887530562345,
+    "f2": 0.39655172413793094,
+    "mcc": 0.31282485829651885,
+    "tp": 46.0,
+    "fp": 306.0,
+    "tn": 6105.0,
+    "fn": 11.0,
+    "pr_auc": 0.5171896541650967,
+    "roc_auc": 0.9174937812476911
+  },
+  "pr_auc_ci": {
+    "point": 0.5171896541650967,
+    "lo": 0.34738480501124214,
+    "hi": 0.6630143345933651
+  },
+  "operating_at_fpr_budget": {
+    "fpr_budget": 0.02,
+    "threshold": 0.19874067604541779,
+    "test_recall": 0.7192982456140351,
+    "test_precision": 0.25949367088607594,
+    "test_fpr": 0.018249883013570427,
+    "phase1_fpr": 0.01643059490084986
+  },
+  "shuffle_control": false
+}

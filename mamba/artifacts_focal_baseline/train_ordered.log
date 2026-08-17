@@ -1,0 +1,46 @@
+phase2 steps=27361 | train windows=16485 pos=101 | runs train/val/test=14/11/12
+Mamba params: 241,026
+epoch   1  loss 6.43  val PR-AUC 0.046  MCC 0.024  recall 0.800
+epoch   2  loss 2.79  val PR-AUC 0.143  MCC 0.084  recall 0.800
+epoch   3  loss 1.89  val PR-AUC 0.156  MCC 0.082  recall 0.800
+epoch   4  loss 1.49  val PR-AUC 0.164  MCC 0.116  recall 0.800
+epoch   5  loss 1.38  val PR-AUC 0.227  MCC 0.092  recall 0.800
+epoch   6  loss 0.95  val PR-AUC 0.229  MCC 0.116  recall 0.800
+epoch   7  loss 0.64  val PR-AUC 0.277  MCC 0.134  recall 0.800
+epoch   8  loss 1.06  val PR-AUC 0.312  MCC 0.088  recall 0.800
+epoch   9  loss 0.91  val PR-AUC 0.323  MCC 0.148  recall 0.800
+epoch  10  loss 0.79  val PR-AUC 0.338  MCC 0.165  recall 0.800
+epoch  11  loss 0.35  val PR-AUC 0.467  MCC 0.315  recall 0.800
+epoch  12  loss 0.22  val PR-AUC 0.454  MCC 0.235  recall 0.800
+epoch  13  loss 0.13  val PR-AUC 0.429  MCC 0.216  recall 0.800
+epoch  14  loss 0.11  val PR-AUC 0.457  MCC 0.222  recall 0.800
+epoch  15  loss 0.10  val PR-AUC 0.448  MCC 0.172  recall 0.800
+epoch  16  loss 0.23  val PR-AUC 0.422  MCC 0.213  recall 0.800
+epoch  17  loss 0.12  val PR-AUC 0.381  MCC 0.145  recall 0.800
+epoch  18  loss 0.09  val PR-AUC 0.474  MCC 0.236  recall 0.800
+epoch  19  loss 0.05  val PR-AUC 0.454  MCC 0.181  recall 0.800
+epoch  20  loss 0.03  val PR-AUC 0.437  MCC 0.179  recall 0.800
+epoch  21  loss 0.03  val PR-AUC 0.421  MCC 0.168  recall 0.800
+epoch  22  loss 0.02  val PR-AUC 0.429  MCC 0.168  recall 0.800
+epoch  23  loss 0.02  val PR-AUC 0.428  MCC 0.164  recall 0.800
+epoch  24  loss 0.02  val PR-AUC 0.425  MCC 0.155  recall 0.800
+epoch  25  loss 0.02  val PR-AUC 0.432  MCC 0.156  recall 0.800
+epoch  26  loss 0.02  val PR-AUC 0.430  MCC 0.151  recall 0.800
+epoch  27  loss 0.02  val PR-AUC 0.428  MCC 0.146  recall 0.800
+epoch  28  loss 0.02  val PR-AUC 0.428  MCC 0.136  recall 0.800
+epoch  29  loss 0.01  val PR-AUC 0.429  MCC 0.134  recall 0.800
+epoch  30  loss 0.01  val PR-AUC 0.433  MCC 0.134  recall 0.800
+epoch  31  loss 0.01  val PR-AUC 0.430  MCC 0.128  recall 0.800
+epoch  32  loss 0.01  val PR-AUC 0.429  MCC 0.122  recall 0.800
+epoch  33  loss 0.01  val PR-AUC 0.424  MCC 0.118  recall 0.800
+early stop (best val PR-AUC 0.474)
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\mamba\artifacts\predictions_phase1.npz
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\mamba\artifacts\predictions_phase2.npz
+
+==== STAGE B (GAT->Mamba) UNION GATE [ORDERED] ====
+  [FAIL] test union PR-AUC        0.4048  (need >= 0.55)
+  [PASS] test union ROC-AUC       0.8784  (need >= 0.85)
+  [PASS] persistence detected     1.0000  (need == True)
+  [FAIL] Phase-1 benign FPR       0.0368  (need <= 0.02)
+  VERDICT: NO-GO  (2/4)
+  test union: PR-AUC 0.405 ROC 0.878 recall 0.789 prec 0.072 MCC 0.222

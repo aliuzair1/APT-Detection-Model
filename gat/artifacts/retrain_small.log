@@ -1,0 +1,46 @@
+Fitting node-feature normaliser on the Phase-2 train split ...
+train windows 16485, positives 37, pos_weight 10.0 (effective 50x)
+epoch   1  loss 0.2335  val[prov] MCC 0.123  F2 0.083  PR-AUC 0.011  | val[union] recall 0.300
+epoch   2  loss 0.1640  val[prov] MCC 0.127  F2 0.088  PR-AUC 0.012  | val[union] recall 0.300
+epoch   3  loss 0.1484  val[prov] MCC 0.144  F2 0.107  PR-AUC 0.014  | val[union] recall 0.300
+epoch   4  loss 0.1405  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch   5  loss 0.1365  val[prov] MCC 0.151  F2 0.116  PR-AUC 0.056  | val[union] recall 0.300
+epoch   6  loss 0.1269  val[prov] MCC 0.191  F2 0.175  PR-AUC 0.083  | val[union] recall 0.040
+epoch   7  loss 0.1242  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.133  | val[union] recall 0.060
+epoch   8  loss 0.1188  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.132  | val[union] recall 0.060
+epoch   9  loss 0.1185  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.307  | val[union] recall 0.120
+epoch  10  loss 0.1082  val[prov] MCC 0.673  F2 0.614  PR-AUC 0.371  | val[union] recall 0.140
+epoch  11  loss 0.1030  val[prov] MCC 0.679  F2 0.758  PR-AUC 0.570  | val[union] recall 0.200
+epoch  12  loss 0.1023  val[prov] MCC 0.748  F2 0.833  PR-AUC 0.639  | val[union] recall 0.220
+epoch  13  loss 0.0991  val[prov] MCC 0.679  F2 0.758  PR-AUC 0.669  | val[union] recall 0.200
+epoch  14  loss 0.0995  val[prov] MCC 0.679  F2 0.758  PR-AUC 0.669  | val[union] recall 0.200
+epoch  15  loss 0.0980  val[prov] MCC 0.769  F2 0.702  PR-AUC 0.522  | val[union] recall 0.160
+epoch  16  loss 0.0948  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.378  | val[union] recall 0.120
+epoch  17  loss 0.0944  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.307  | val[union] recall 0.100
+epoch  18  loss 0.0925  val[prov] MCC 0.769  F2 0.702  PR-AUC 0.522  | val[union] recall 0.160
+epoch  19  loss 0.0942  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.307  | val[union] recall 0.100
+epoch  20  loss 0.0884  val[prov] MCC 0.769  F2 0.702  PR-AUC 0.522  | val[union] recall 0.160
+epoch  21  loss 0.0949  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.173  | val[union] recall 0.060
+epoch  22  loss 0.0859  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.369  | val[union] recall 0.120
+epoch  23  loss 0.0883  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.498  | val[union] recall 0.120
+epoch  24  loss 0.0849  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.428  | val[union] recall 0.100
+epoch  25  loss 0.0817  val[prov] MCC 0.337  F2 0.405  PR-AUC 0.337  | val[union] recall 0.160
+epoch  26  loss 0.0810  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.376  | val[union] recall 0.100
+epoch  27  loss 0.0824  val[prov] MCC 0.338  F2 0.379  PR-AUC 0.309  | val[union] recall 0.140
+epoch  28  loss 0.0819  val[prov] MCC 0.406  F2 0.455  PR-AUC 0.282  | val[union] recall 0.120
+epoch  29  loss 0.0775  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.346  | val[union] recall 0.080
+epoch  30  loss 0.0763  val[prov] MCC 0.673  F2 0.614  PR-AUC 0.592  | val[union] recall 0.140
+epoch  31  loss 0.0774  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.510  | val[union] recall 0.120
+epoch  32  loss 0.0790  val[prov] MCC 0.406  F2 0.455  PR-AUC 0.424  | val[union] recall 0.120
+epoch  33  loss 0.0827  val[prov] MCC 0.406  F2 0.455  PR-AUC 0.351  | val[union] recall 0.120
+epoch  34  loss 0.0809  val[prov] MCC 0.338  F2 0.379  PR-AUC 0.232  | val[union] recall 0.140
+epoch  35  loss 0.0729  val[prov] MCC 0.406  F2 0.455  PR-AUC 0.304  | val[union] recall 0.160
+epoch  36  loss 0.0790  val[prov] MCC 0.338  F2 0.379  PR-AUC 0.228  | val[union] recall 0.140
+epoch  37  loss 0.0766  val[prov] MCC 0.406  F2 0.455  PR-AUC 0.472  | val[union] recall 0.120
+epoch  38  loss 0.0711  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.482  | val[union] recall 0.120
+epoch  39  loss 0.0775  val[prov] MCC 0.406  F2 0.455  PR-AUC 0.472  | val[union] recall 0.160
+epoch  40  loss 0.0717  val[prov] MCC 0.338  F2 0.379  PR-AUC 0.228  | val[union] recall 0.140
+early stop at epoch 40 (best val MCC 0.769)
+best val MCC 0.769; checkpoint saved.
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\predictions_phase1.npz and C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\gat_window_embeddings_phase1.npz (35300 windows)
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\predictions_phase2.npz and C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\gat_window_embeddings_phase2.npz (27361 windows)

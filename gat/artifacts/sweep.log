@@ -1,0 +1,16 @@
+preloading graphs into memory (once)...
+  cached train/val/test = 16633/4408/6468 graphs
+Multi-seed capacity sweep (3 widths x 3 seeds):
+  hidden=16 layers=2
+    seed=0 hidden=16 params=17,659  train PR-AUC 0.838  test PR-AUC 0.434  test ROC 0.918
+    seed=1 hidden=16 params=17,659  train PR-AUC 0.805  test PR-AUC 0.436  test ROC 0.973
+    seed=2 hidden=16 params=17,659  train PR-AUC 0.764  test PR-AUC 0.661  test ROC 0.972
+  hidden=32 layers=2
+    seed=0 hidden=32 params=30,203  train PR-AUC 0.574  test PR-AUC 0.607  test ROC 0.981
+    seed=1 hidden=32 params=30,203  train PR-AUC 0.874  test PR-AUC 0.515  test ROC 0.922
+    seed=2 hidden=32 params=30,203  train PR-AUC 0.790  test PR-AUC 0.377  test ROC 0.916
+  hidden=64 layers=2
+    seed=0 hidden=64 params=55,291  train PR-AUC 0.672  test PR-AUC 0.495  test ROC 0.922
+    seed=1 hidden=64 params=55,291  train PR-AUC 0.645  test PR-AUC 0.264  test ROC 0.967
+    seed=2 hidden=64 params=55,291  train PR-AUC 0.823  test PR-AUC 0.546  test ROC 0.914
+saved stageA_ceiling.{json,md,png}

@@ -1,0 +1,19 @@
+{
+  "exit_threshold": 0.95,
+  "operating_threshold": 0.007885617204010487,
+  "exit_rate_overall": 0.8345701917130488,
+  "exit_rate_benign": 0.8398065824364374,
+  "exit_rate_attack": 0.24561403508771928,
+  "block2_compute_saved_frac": 0.8345701917130488,
+  "block2_compute_saved_note": "streaming-deployment potential only: this pure-PyTorch scan runs the whole chunk as one batched forward pass, so exited windows do NOT actually skip Block-2 compute in this codepath. The saving is realizable only in a streaming / per-window deployment that checks exit_prob after Block 1 and stops before running Block 2 for that window.",
+  "full_model": {
+    "pr_auc": 0.4720579138857131,
+    "roc_auc": 0.8884236796952606,
+    "recall_at_operating_thr": 0.8947368421052632
+  },
+  "early_exit_applied": {
+    "pr_auc": 0.4608288667414824,
+    "roc_auc": 0.872911689612426,
+    "recall_at_operating_thr": 0.8596491228070176
+  }
+}

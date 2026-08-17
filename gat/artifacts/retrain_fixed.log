@@ -1,0 +1,52 @@
+Fitting node-feature normaliser on the Phase-2 train split ...
+train windows 16485, positives 37, pos_weight 10.0 (eff 50x) | node imbalance 65204:223, node_pos_weight 10.0 (eff 50x -- deliberately moderate)
+epoch   1  loss 0.2338  val[prov] MCC 0.123  F2 0.083  PR-AUC 0.010  | val[union] recall 0.300
+epoch   2  loss 0.1630  val[prov] MCC 0.127  F2 0.088  PR-AUC 0.012  | val[union] recall 0.300
+epoch   3  loss 0.1503  val[prov] MCC 0.145  F2 0.108  PR-AUC 0.014  | val[union] recall 0.300
+epoch   4  loss 0.1414  val[prov] MCC 0.151  F2 0.116  PR-AUC 0.014  | val[union] recall 0.300
+epoch   5  loss 0.1303  val[prov] MCC 0.151  F2 0.116  PR-AUC 0.014  | val[union] recall 0.300
+epoch   6  loss 0.1275  val[prov] MCC 0.151  F2 0.116  PR-AUC 0.014  | val[union] recall 0.300
+epoch   7  loss 0.1236  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.274  | val[union] recall 0.100
+epoch   8  loss 0.1171  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.377  | val[union] recall 0.120
+epoch   9  loss 0.1166  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.377  | val[union] recall 0.120
+epoch  10  loss 0.1111  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.239  | val[union] recall 0.080
+epoch  11  loss 0.1078  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.239  | val[union] recall 0.080
+epoch  12  loss 0.1053  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.377  | val[union] recall 0.120
+epoch  13  loss 0.1047  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.308  | val[union] recall 0.100
+epoch  14  loss 0.1049  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.378  | val[union] recall 0.120
+epoch  15  loss 0.1008  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.233  | val[union] recall 0.080
+epoch  16  loss 0.0953  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.378  | val[union] recall 0.120
+epoch  17  loss 0.0946  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.378  | val[union] recall 0.120
+epoch  18  loss 0.0926  val[prov] MCC 0.673  F2 0.614  PR-AUC 0.450  | val[union] recall 0.140
+epoch  19  loss 0.0894  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.307  | val[union] recall 0.100
+epoch  20  loss 0.0889  val[prov] MCC 0.673  F2 0.614  PR-AUC 0.449  | val[union] recall 0.140
+epoch  21  loss 0.0832  val[prov] MCC 0.679  F2 0.758  PR-AUC 0.657  | val[union] recall 0.200
+epoch  22  loss 0.0851  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.402  | val[union] recall 0.100
+epoch  23  loss 0.0826  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.510  | val[union] recall 0.120
+epoch  24  loss 0.0809  val[prov] MCC 0.270  F2 0.303  PR-AUC 0.292  | val[union] recall 0.120
+epoch  25  loss 0.0796  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.243  | val[union] recall 0.060
+epoch  26  loss 0.0826  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.308  | val[union] recall 0.080
+epoch  27  loss 0.0868  val[prov] MCC 0.480  F2 0.439  PR-AUC 0.428  | val[union] recall 0.100
+epoch  28  loss 0.0806  val[prov] MCC 0.576  F2 0.526  PR-AUC 0.498  | val[union] recall 0.120
+epoch  29  loss 0.0767  val[prov] MCC 0.455  F2 0.431  PR-AUC 0.362  | val[union] recall 0.100
+epoch  30  loss 0.0794  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.242  | val[union] recall 0.060
+epoch  31  loss 0.0840  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.118  | val[union] recall 0.080
+epoch  32  loss 0.0805  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.096  | val[union] recall 0.060
+epoch  33  loss 0.0830  val[prov] MCC 0.383  F2 0.351  PR-AUC 0.188  | val[union] recall 0.080
+epoch  34  loss 0.0727  val[prov] MCC 0.191  F2 0.175  PR-AUC 0.154  | val[union] recall 0.040
+epoch  35  loss 0.0774  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.086  | val[union] recall 0.060
+epoch  36  loss 0.0757  val[prov] MCC 0.287  F2 0.263  PR-AUC 0.082  | val[union] recall 0.060
+epoch  37  loss 0.0742  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  38  loss 0.0715  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  39  loss 0.0709  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  40  loss 0.0754  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  41  loss 0.0767  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  42  loss 0.0723  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  43  loss 0.0757  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  44  loss 0.0671  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+epoch  45  loss 0.0720  val[prov] MCC 0.191  F2 0.175  PR-AUC 0.052  | val[union] recall 0.080
+epoch  46  loss 0.0732  val[prov] MCC 0.150  F2 0.114  PR-AUC 0.014  | val[union] recall 0.300
+early stop at epoch 46 (best val MCC 0.679)
+best val MCC 0.679; checkpoint saved.
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\predictions_phase1.npz and C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\gat_window_embeddings_phase1.npz (35300 windows)
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\predictions_phase2.npz and C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\gat\artifacts\gat_window_embeddings_phase2.npz (27361 windows)

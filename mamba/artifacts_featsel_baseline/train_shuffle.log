@@ -1,0 +1,51 @@
+** TEMPORAL-SHUFFLE CONTROL: window order scrambled within each run. **
+   If test PR-AUC matches the ordered run, temporal order is NOT the driver.
+phase2 steps=27361 | train windows=16485 pos=101 | runs train/val/test=14/11/12
+Mamba params: 241,026
+epoch   1  loss 8.14  val PR-AUC 0.020  MCC 0.018  recall 0.800
+epoch   2  loss 3.98  val PR-AUC 0.064  MCC 0.023  recall 0.800
+epoch   3  loss 3.00  val PR-AUC 0.038  MCC 0.041  recall 0.800
+epoch   4  loss 2.11  val PR-AUC 0.042  MCC 0.058  recall 0.800
+epoch   5  loss 1.73  val PR-AUC 0.184  MCC 0.030  recall 0.800
+epoch   6  loss 1.41  val PR-AUC 0.179  MCC 0.021  recall 0.800
+epoch   7  loss 1.10  val PR-AUC 0.178  MCC 0.058  recall 0.800
+epoch   8  loss 0.91  val PR-AUC 0.211  MCC 0.041  recall 0.800
+epoch   9  loss 0.66  val PR-AUC 0.154  MCC 0.020  recall 0.800
+epoch  10  loss 0.60  val PR-AUC 0.034  MCC 0.054  recall 0.800
+epoch  11  loss 0.73  val PR-AUC 0.172  MCC 0.053  recall 0.800
+epoch  12  loss 0.58  val PR-AUC 0.112  MCC 0.034  recall 0.800
+epoch  13  loss 0.45  val PR-AUC 0.053  MCC 0.023  recall 0.800
+epoch  14  loss 0.44  val PR-AUC 0.170  MCC 0.063  recall 0.800
+epoch  15  loss 0.18  val PR-AUC 0.200  MCC 0.058  recall 0.800
+epoch  16  loss 0.12  val PR-AUC 0.190  MCC 0.043  recall 0.800
+epoch  17  loss 0.17  val PR-AUC 0.213  MCC 0.039  recall 0.800
+epoch  18  loss 0.24  val PR-AUC 0.197  MCC 0.019  recall 0.800
+epoch  19  loss 0.27  val PR-AUC 0.210  MCC 0.016  recall 0.800
+epoch  20  loss 0.25  val PR-AUC 0.113  MCC 0.031  recall 0.800
+epoch  21  loss 0.14  val PR-AUC 0.173  MCC 0.034  recall 0.800
+epoch  22  loss 0.10  val PR-AUC 0.198  MCC 0.036  recall 0.800
+epoch  23  loss 0.06  val PR-AUC 0.095  MCC 0.028  recall 0.800
+epoch  24  loss 0.22  val PR-AUC 0.117  MCC 0.023  recall 0.800
+epoch  25  loss 0.29  val PR-AUC 0.080  MCC 0.024  recall 0.800
+epoch  26  loss 0.56  val PR-AUC 0.135  MCC 0.028  recall 0.800
+epoch  27  loss 0.47  val PR-AUC 0.071  MCC 0.034  recall 0.800
+epoch  28  loss 0.16  val PR-AUC 0.154  MCC 0.046  recall 0.800
+epoch  29  loss 0.08  val PR-AUC 0.145  MCC 0.041  recall 0.800
+epoch  30  loss 0.04  val PR-AUC 0.154  MCC 0.042  recall 0.800
+epoch  31  loss 0.03  val PR-AUC 0.156  MCC 0.046  recall 0.800
+epoch  32  loss 0.02  val PR-AUC 0.165  MCC 0.047  recall 0.800
+early stop (best val PR-AUC 0.213)
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\mamba\artifacts\predictions_phase1_shuffle.npz
+wrote C:\Users\aliuz\Desktop\VSCodes\CICAPT_Dataset\mamba\artifacts\predictions_phase2_shuffle.npz
+
+==== STAGE B (GAT->Mamba) UNION GATE [SHUFFLE-CONTROL] ====
+  [FAIL] test union PR-AUC        0.1933  (need >= 0.55)
+  [FAIL] test union ROC-AUC       0.7593  (need >= 0.85)
+  [PASS] persistence detected     1.0000  (need == True)
+  [FAIL] Phase-1 benign FPR       0.5136  (need <= 0.02)
+  VERDICT: NO-GO  (1/4)
+  test union: PR-AUC 0.193 ROC 0.759 recall 0.807 prec 0.014 MCC 0.054
+
+  [TEMPORAL-ORDER TEST] ordered PR-AUC 0.405 vs shuffled 0.193  (delta +0.212)
+   large positive delta  -> temporal order IS used (Mamba earns its place)
+   delta ~ 0             -> gain is fusion, not order (a per-window model suffices)

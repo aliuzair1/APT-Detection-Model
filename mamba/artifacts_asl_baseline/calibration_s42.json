@@ -1,0 +1,6 @@
+{
+  "temperature": 0.9461294412612915,
+  "val_nll_before": 0.04669058695435524,
+  "val_nll_after": 0.04648685082793236,
+  "note": "rank-preserving; does not change PR-AUC/ROC or recall-targeted metrics"
+}
